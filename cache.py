@@ -3,7 +3,7 @@ import pandas as pd
 
 st.title('Streamlit con cache')
 
-data_url = 'dataset.csv'
+data_url = 'https://raw.githubusercontent.com/Asofiaga/streamlit/master/dataset.csv?token=GHSAT0AAAAAAB2XZREV2HJH2AGJ55MDA2VUY3NHLQA'
 
 @st.cache
 def load_data(nrows): 
