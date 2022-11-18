@@ -13,7 +13,7 @@ sidebar.title('Acciones')
 sidebar.write('You can add any element')
 
 today = datetime.date.today()
-t_date=sidebar.date_input('Current date',today)
+t_date = sidebar.date_input('Current date',today)
 st.success('Curren date: `%s`' %(t_date))
 
 if sidebar.checkbox('Show Dataset?'):
@@ -27,7 +27,7 @@ sle_class= sidebar.radio('Select Class:',dat_tit['class'].unique())
 st.success(f'Selected Class: {sle_class}')
 
 slec_sex = sidebar.selectbox('Select sex:', dat_tit['sex'].unique())
-st.success(f'Sleccted Sex: {str(slec_sex).capitalize()}')
+st.success(f'Slected Sex: {str(slec_sex).capitalize()}')
 
 
 
@@ -40,7 +40,6 @@ fare_selec = optionals.slider(
     'Select the Fare:',
     min_value= float(dat_tit['fare'].min()),
     max_value= float(dat_tit['fare'].max())
-
 )
 
 subset_fare = dat_tit[(dat_tit['fare']>= fare_selec)]

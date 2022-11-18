@@ -15,7 +15,7 @@ def load_data_bysex(sex):
     data = pd.read_csv(data_url)
     filtered = data[data['sex']==sex]
     return filtered
-
+ 
 data = load_data()
 selectbox = st.selectbox('Select sex', data['sex'].unique())
 bttnfilter = st.button('Filter by sex')
