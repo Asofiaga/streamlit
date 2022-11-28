@@ -29,4 +29,5 @@ with col1:
                         (data['Category'] == selected_categ) &
                         (data['Discount'] == desc)])
 
+
 "Sofía Gutiérrez - A00827191"
